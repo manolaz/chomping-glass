@@ -17,9 +17,9 @@ import { toast } from "react-toastify";
 window.Buffer = Buffer;
 
 const PROGRAM_ID = new PublicKey(
-  "Gg9RXnAuiQDYadKP4tExAFCkhXSc3kBywCGqqPVx2duH"
+  "BTbaEEoovpFeTZjP3adLdfJWzDYP1RwmquLMF2DX4EjC"
 );
-const FEE = new PublicKey("EGJnqcxVbhJFJ6Xnchtaw8jmPSvoLXfN2gWsY9Etz5SZ");
+const FEE = new PublicKey("AXxA7eN3e6Zj2NbGaJNk7YNhZSHjaJHhtXGKPCEV8Urn");
 
 type GameState = {
   eaten: boolean[][];
@@ -230,7 +230,7 @@ function App() {
       );
     } else if (connection.rpcEndpoint.includes("eclipsenetwork")) {
       console.log(
-          `https://solscan.io/tx/${signature}?cluster=custom&customUrl=https%3A%2F%2Fstaging-rpc.dev.eclipsenetwork.xyz`
+          `https://solscan.io/tx/${signature}?cluster=custom&customUrl=https%3A%2F%2Fstaging-rpc.dev2.eclipsenetwork.xyz`
       );
     } else {
       console.log(`https://solscan.io/tx/${signature}`);
@@ -281,7 +281,7 @@ function App() {
           }
           notify(
             `${signature}`,
-            `https://solscan.io/tx/${signature}?cluster=custom&customUrl=https%3A%2F%2Fstaging-rpc.dev.eclipsenetwork.xyz`,
+            `https://solscan.io/tx/${signature}?cluster=custom&customUrl=https%3A%2F%2Fstaging-rpc.dev2.eclipsenetwork.xyz`,
             "View on Solscan"
           );
         } else {

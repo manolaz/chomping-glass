@@ -8,10 +8,10 @@ An on-chain game of skill.
 
 The program is *immutably* deployed to Solana mainnet at the following address:
 ```
-ChompZg47TcVy5fk2LxPEpW6SytFYBES5SHoqgrm8A4D
+BTbaEEoovpFeTZjP3adLdfJWzDYP1RwmquLMF2DX4EjC
 ```
 
 To verify the program's code, use the following command (requires `solana-verify` which can be installed via `cargo install solana-verify`):
 ```
-solana-verify verify-from-repo -um --program-id ChompZg47TcVy5fk2LxPEpW6SytFYBES5SHoqgrm8A4D https://github.com/jarry-xiao/chomping-glass
+solana-verify verify-from-repo -um --program-id BTbaEEoovpFeTZjP3adLdfJWzDYP1RwmquLMF2DX4EjC https://github.com/jarry-xiao/chomping-glass
 ```

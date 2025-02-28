@@ -24,3 +24,4 @@ overflow-checks = true
 [dependencies]
 solana-program = "=1.14.12"
 bytemuck = "=1.13.0"
+mpl-core-candy-machine-core = "0.2.1"

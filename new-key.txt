@@ -1,0 +1,26 @@
+kivan@win25:/mnt/f/GitHub/solana/chomping-glass$ solana-keygen new -o target/deploy/chomping.json
+Generating a new keypair
+
+For added security, enter a BIP39 passphrase
+
+NOTE! This passphrase improves security of the recovery seed phrase NOT the
+keypair file itself, which is stored as insecure plain text
+
+BIP39 Passphrase (empty for none):
+
+Wrote new keypair to target/deploy/chomping.json
+=====================================================================
+pubkey: FcPZHnCWSaaXD2kj7qJ9QvddZYEtEaTqTnQ7NXVP1Btm
+=====================================================================
+Save this seed phrase and your BIP39 passphrase to recover your new keypair:
+soft task human group wrist limb imitate conduct injury bag wave upon
+=====================================================================
+kivan@win25:/mnt/f/GitHub/solana/chomping-glass$ solana address -k target/deploy/chomping.json
+FcPZHnCWSaaXD2kj7qJ9QvddZYEtEaTqTnQ7NXVP1Btm
+
+
+chomping-glass$ solana program deploy dist/program/chomping_glass.so -u devnet
+Program Id: BTbaEEoovpFeTZjP3adLdfJWzDYP1RwmquLMF2DX4EjC
+
+Signature: 3F8aQ6KnAHfoGPZAbQ52ikV5FEGLaqTAW2AYSX5h2UMxivU7TYHAtjD9YrATqfbw1icCmC86gX8SQM42Bn3zedvP
+
